@@ -1,0 +1,28 @@
+
+-# .contain-to-grid.sticky
+%nav.top-bar{"data-topbar" => true}
+  %ul.title-area
+    %li.name
+      %h1
+        %a{:href => "/"} 
+          Fundwise
+          %span{style: "font-size: 0.5em; color: #666"}  alpha
+    %li.toggle-topbar.menu-icon
+      %a{href: "/"}
+        Menu
+  %section.top-bar-section
+    / - if user_signed_in?
+    /   %ul.right
+    /     %li
+    /       %a{:href => "/#discover"} GET STARTED
+    /     %li
+    /       = link_to "MY PROFILE ", edit_user_registration_path
+            
+    /     %li
+    /       = link_to "SIGN OUT", destroy_user_session_path, method: :delete
+    / - else
+    %ul.right
+      %li
+        %a{:href => "/#discover"} GET STARTED
+      %li
+        %a{:href => "/sessions/new"} SIGN IN
