@@ -117,7 +117,7 @@ $jet         : #222222;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
+$secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -619,10 +619,10 @@ $header-font-color: $white;
 // $form-label-pointer: pointer;
 // $form-label-font-size: rem-calc(14);
 // $form-label-font-weight: $font-weight-normal;
-// $form-label-line-height: 1.5;
-// $form-label-font-color: scale-color($black, $lightness: 30%);
-// $form-label-small-transform: capitalize;
-// $form-label-bottom-margin: 0;
+$form-label-line-height: 1.0;
+$form-label-font-color: $white; // scale-color($black, $lightness: 30%);
+$form-label-small-transform: none;
+$form-label-bottom-margin: 0;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
@@ -663,12 +663,12 @@ $header-font-color: $white;
 
 // We use these to style the error states for inputs and labels
 // $input-error-message-padding: rem-calc(6 9 9);
-// $input-error-message-top: -1px;
+$input-error-message-top: 2px;
 // $input-error-message-font-size: rem-calc(12);
 // $input-error-message-font-weight: $font-weight-normal;
-// $input-error-message-font-style: italic;
+$input-error-message-font-style: normal;
 // $input-error-message-font-color: $white;
-// $input-error-message-bg-color: $alert-color;
+$input-error-message-bg-color: $secondary-color;
 // $input-error-message-font-color-alt: $oil;
 
 // We use this to style the glowing effect of inputs when focused
@@ -1370,7 +1370,7 @@ $topbar-bg: none;
 
 
 // Height and margin
-$topbar-height: rem-calc(95);
+// $topbar-height: rem-calc(95);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1380,7 +1380,7 @@ $topbar-title-font-size: rem-calc(40);
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: none;
 // $topbar-dropdown-link-color: $white;
-// $topbar-dropdown-link-bg: $oil;
+$topbar-dropdown-link-bg: none;
 $topbar-dropdown-link-bg-hover: none;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
