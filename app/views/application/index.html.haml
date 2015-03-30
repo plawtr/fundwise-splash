@@ -1,25 +1,24 @@
 
-%video{autoplay: "autoplay", loop: "loop", preload: "auto", poster: "assets/poster.jpg", id: "bgvid"}
-  %source{src:"assets/Paris-P1-0.webm", type:"video/webm"}
-  %source{src:"assets/Paris-P1-1.mp4", type: "video/mp4"}
+%video{autoplay: "autoplay", loop: "loop", preload: "auto", poster:  "#{asset_path 'poster.jpg'}", id: "bgvid"}
+  %source{src: "#{asset_path 'Paris-P1-0.webm'}", type:"video/webm"}
+  %source{src: "#{asset_path 'Paris-P1-1.mp4'}", type: "video/mp4"}
 
 .row
-  .large-12.columns
+  .large-7.large-offset-3.columns
     %h1.text-center{style: "font-family: 'Roboto Condensed', sans; font-size: 3.95em; padding-top:60px; font-weight: bold"}
       INVESTING BETTER
 .row
-  .large-6.large-offset-3.columns
+  .large-7.large-offset-3.columns
     %hr{style: "border: 1px solid #008CBA"}
 .row
-  .large-12.columns    
+  .large-7.large-offset-3.columns    
     %p.text-center Low cost investment accounts with no extra fees or hidden expenses
 
 .row
-  .large-11.large-offset-1.columns
-    %ul.inline-list.text-center
-      %li We pick up the phone when you call. 
-      %li We believe in earning your trust.
-      %li We believe in a better way to do investment.
+  .large-7.large-offset-3.columns
+    %ul.small-block-grid-2
+      %li.text-center We believe in earning your trust.
+      %li.text-center We believe in a better way to invest.
 
 
 
